@@ -478,7 +478,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: "Learn with me";
 }
 .teams .carousel .card{
     background: #222;
@@ -488,9 +488,34 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
-    background: crimson;
+
+.teams .carousel .card .link{
+display: inline-block;
+background: crimson;
+color: #fff;
+font-size: 20px;
+font-weight: 500;
+padding: 10px 30px;
+margin-top: 20px;
+border-radius: 6px;
+border: 2px solid crimson;
+transition: all 0.3s ease;}
+
+.teams .carousel .card a{
+    color: #fff;
+    
 }
+.teams .carousel .card a:hover{
+    background: none;
+    color: black;
+}
+
+
+
+
+/* .teams .carousel .card:hover{
+    background: crimson;
+} */
 .teams .carousel .card .box{
     display: flex;
     flex-direction: column;
@@ -509,7 +534,6 @@ section .title::after{
 .teams .carousel .card img{
     height: 150px;
     width: 150px;
-    object-fit: cover;
     border-radius: 50%;
     border: 5px solid crimson;
     transition: all 0.3s ease;
